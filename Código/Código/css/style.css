@@ -1,0 +1,53 @@
+/* MediaQ*/
+
+
+
+
+/* HEADER*/
+.enlaceJuego{
+    display: flex;
+    justify-content: end;
+    height: 2rem;
+    background-color: black;
+}
+.botonJuego{
+    background-color: black;
+    color: aliceblue;
+    border: 0em;
+    font-family: Courier New, monospace;
+}
+.botonJuego:hover{
+    color: gray;
+}
+.botonesTop{
+    display: flex;
+    justify-content: right;
+    position: sticky;
+}
+.sobreMi{
+    background-color: black;
+    color: aliceblue;
+    border: 0em;
+    font-family:  New, monospace;
+    margin-right: 2em;
+}
+.sobreMi:hover{
+    background-color: gray;
+}
+
+.contacto{
+    background-color: black;
+    color: aliceblue;
+    border: 1em;
+    font-family:  New, monospace;
+}
+.contacto:hover{
+    color: gray;
+}
+
+/* BODY*/
+
+body{
+    background-color: rgb(0, 0, 0);   
+}
+
