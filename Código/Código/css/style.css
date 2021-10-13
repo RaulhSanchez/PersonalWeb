@@ -1,25 +1,40 @@
 
 /* Smartphones (portrait and landscape) ----------- */  
 @media only screen  
-and (min-width : 320px)  
-and (max-width : 480px) {  
+and (min-width : 300px)  
+and (max-width : 700) {  
 /* Styles */  
 .botonesTop{
     display:flex;
 }
 .sobreMi{
-    position: relative;
-    left:20em
+    justify-content: right;
+    
 }
 .contacto{
     position: relative;
     left: 20em;
 }
+
+.mainImagen{
+    display: flex;
+}
+.imagenMain{
+    flex:auto;
+    /* Tamaño*/
+
+    /*Posicion*/
+    padding-top: 2em;
+
+    
+}
+
+
 } 
 
 
 /* Smartphones (portrait and landscape) ----------- */  
-@media all  
+@media all and (min-width : 300px) and (max-width: 4000px)
  {  
 /* Styles */  
 
@@ -37,6 +52,7 @@ and (max-width : 480px) {
     color: aliceblue;
     border: 0em;
     font-family: Courier New, monospace;
+    font-size: 2em;
 }
 .botonJuego:hover{
     color: gray;
@@ -52,6 +68,7 @@ and (max-width : 480px) {
     border: 0em;
     font-family:  New, monospace;
     margin-right:2em;
+    font-size: 2em;
 }
 .sobreMi:hover{
     background-color: gray;
@@ -63,10 +80,14 @@ and (max-width : 480px) {
     color: aliceblue;
     border: 1em;
     font-family:  New, monospace;
+    font-size: 2em;
 }
 .contacto:hover{
     color: gray;
 }
+
+
+
 
 /* BODY*/
 
@@ -75,35 +96,75 @@ body{
 }
 .mainImagen{
     display: flex;
-    align-items:flex-end;
+    border-radius: 4em;
 }
 .imagenMain{
-    align-self: center;
-    /* Tamaño*/
-    width:50em;
-    height: 50em;
-    /*Posicion*/
-    z-index: 5;
+    flex:auto;
     padding-top: 2em;
-    padding-left: 1em;
-    padding-right: 5em;
-    
 }
 
+
+
+
+/* WEB DESIGN*/
 
 .webDesignDiv{
-    z-index: 2;
-    font-size: 4em;
-    color: white;
+    display: flex;
     position: sticky;
     top:1em;
-}
-.webDesign{
-    z-index: 9;
     font-size: 4em;
     color: white;
-    position: fixed;
 }
+.web{
+    text-align:auto;
+    font-size: 2em;
+    color: white;
+    position: fixed;
+    font-family:  New, monospace;
+    margin-left: 0.5em;
+}
+.design{
+    text-align:auto;
+    font-size: 2em;
+    color: white;
+    position: fixed;
+    font-family:  New, monospace;
+    margin-top:2em;
+    margin-left: 1.5em;
+}
+.rrss{
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    z-index: 2;
+    margin: 0%;
+}
+
+.redes{
+    z-index: 2;
+    text-align: left;
+    font-size: 1em;
+    color: aliceblue;
+    flex-direction: column 1em ;
+    margin: 0%; 
+    margin-top: 1em;  
+}
+.github{
+    z-index: 2;
+    text-align: bottom;
+    font-size: 1em;
+    color: aliceblue;
+    margin-top: 2em;
+    margin-left: 0em;
+}
+.instagram{
+    z-index: 2;
+    text-align: bottom;
+    font-size: 1em;
+    color: aliceblue;
+    margin-top: 2em;
+    margin-left: 0em;
+}
+
 
 
 }
