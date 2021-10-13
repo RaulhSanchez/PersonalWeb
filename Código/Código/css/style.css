@@ -1,5 +1,27 @@
-/* MediaQ*/
 
+/* Smartphones (portrait and landscape) ----------- */  
+@media only screen  
+and (min-width : 320px)  
+and (max-width : 480px) {  
+/* Styles */  
+.botonesTop{
+    display:flex;
+}
+.sobreMi{
+    position: relative;
+    left:20em
+}
+.contacto{
+    position: relative;
+    left: 20em;
+}
+} 
+
+
+/* Smartphones (portrait and landscape) ----------- */  
+@media all  
+ {  
+/* Styles */  
 
 
 
@@ -21,21 +43,22 @@
 }
 .botonesTop{
     display: flex;
-    justify-content: right;
-    position: sticky;
+    justify-content:right;   
 }
 .sobreMi{
+    z-index:2;
     background-color: black;
     color: aliceblue;
     border: 0em;
     font-family:  New, monospace;
-    margin-right: 2em;
+    margin-right:2em;
 }
 .sobreMi:hover{
     background-color: gray;
 }
 
 .contacto{
+    
     background-color: black;
     color: aliceblue;
     border: 1em;
@@ -50,4 +73,37 @@
 body{
     background-color: rgb(0, 0, 0);   
 }
+.mainImagen{
+    display: flex;
+    align-items:flex-end;
+}
+.imagenMain{
+    align-self: center;
+    /* Tamaño*/
+    width:50em;
+    height: 50em;
+    /*Posicion*/
+    z-index: 5;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 5em;
+    
+}
 
+
+.webDesignDiv{
+    z-index: 2;
+    font-size: 4em;
+    color: white;
+    position: sticky;
+    top:1em;
+}
+.webDesign{
+    z-index: 9;
+    font-size: 4em;
+    color: white;
+    position: fixed;
+}
+
+
+}
