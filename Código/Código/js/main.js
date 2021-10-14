@@ -22,14 +22,48 @@
 {name:"Tu imaginacion"}
 ];*/
 
+
+var gameState=Enumerator([INIT,WAIT,ATACK,]);
+
+
+
+
+function update(){
+  switch(state){
+
+
+    case playerStatus().INIT:
+      changeStatus(gameState.WAIT);
+      break;
+
+      case playerStatus().WAIT:
+        players[0].atack=false;
+        players[1].atack=false;
+
+        if(players[1].atack == false){
+          players[0].atack = true;
+          changeStatus(gameState.players[0]);
+        }else{
+          players[1].atack = true;
+          changeStatus(gameState.players[1]);
+        }
+        break;
+
+        case playerStatus().ATACK:
+          
+
+  }
+}
+
 class players {
   constructor(name, life, atack){
   this.name =name,
   this.life=life,
   this.atack=atack
   }
-  //playerAtack()
-  //playerStatus()
+  
+  playerStatus()
+  changeStatus()
 };
 
 class player02 extends players{
@@ -71,4 +105,5 @@ class player01 extends players{
     }
     
   }
+
   
