@@ -50,7 +50,6 @@ and (max-width : 700) {
 .botonJuego{
     background-color: black;
     color: aliceblue;
-    border: 0em;
     font-family: Courier New, monospace;
     font-size: 2em;
 }

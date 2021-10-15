@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="seleccion">
+        <div class="jugador" onclick="seleccionarJugador('jugdaor1')"> 
+            Jugador 1 
+            <img src="https://i.pinimg.com/550x/3a/00/00/3a00006d51658920c717c28fbdd7b789.jpg" alt="">
+        </div>
+        <div class="jugador" onclick="seleccionarJugador('jugdaor2')"> 
+            Jugador 2
+            <img src="https://i.pinimg.com/550x/3a/00/00/3a00006d51658920c717c28fbdd7b789.jpg" alt="">
+        </div>
+        <div class="jugador" onclick="seleccionarJugador('jugdaor3')"> 
+            Jugador 3 
+            <img src="https://i.pinimg.com/550x/3a/00/00/3a00006d51658920c717c28fbdd7b789.jpg" alt="">
+        </div>
+        <div class="jugador" onclick="seleccionarJugador('jugdaor4')"> 
+            Jugador 4
+            <img src="https://i.pinimg.com/550x/3a/00/00/3a00006d51658920c717c28fbdd7b789.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="pelea" style="display: none;">
+        <div> Jugador 1 
+            <img src="" alt="">
+            <button>pelease</button>
+        </div>
+        <div> Jugador 2
+            <img src="" alt="">
+        </div>
+    </div>
+
+
+//          JAVASCRIPT
+    <script>
+
+        class player {
+            constructor(name, life, imagen){
+            this.name =name,
+            this.life=life,
+            this.imagen=imagen
+        }
+
+        };
+        let j1 = new player('j1', 200, "https://i.pinimg.com/550x/3a/00/00/3a00006d51658920c717c28fbdd7b789.jpg")
+        let j2 = new player('j1', 200, "https://i.pinimg.com/550x/3a/00/00/3a00006d51658920c717c28fbdd7b789.jpg")
+        let j3 = new player('j1', 200, "https://i.pinimg.com/550x/3a/00/00/3a00006d51658920c717c28fbdd7b789.jpg")
+        let j4 = new player('j1', 200, "https://i.pinimg.com/550x/3a/00/00/3a00006d51658920c717c28fbdd7b789.jpg")
+
+        let partida = {
+            jugadores: []
+        }
+
+
+        function selecionJugador(jugadoreSeleccionado) {
+            if(partida.jugadores.length == 2){
+                // Pongo las imagenes de los seleccionados en la pantalla de pelea (está oculta)
+                let imagenJugador1 = partida.jugadores[0].imagen
+
+
+                // cambio de pantalla, desoculto la pantlla de la pelea que previamente he rellenador con los jugadores seleccionados
+                let nodoPantallaPrincipal = document.getElementById("seleccion")
+                nodoPantallaPrincipal.style.display = 'none'
+
+                let nodoPantallaPelea = document.getElementById("pelea")
+                nodoPantallaPrincipal.style.display = 'block'
+            }else{
+                if(partida.jugadores[0] == undefined){
+                    if(jugadoreSeleccionado == 'jugador1'){
+                        partida.jugadores[0] = j1
+                    }   
+                    if(jugadoreSeleccionado == 'jugador2'){
+                        partida.jugadores[0] = j1
+                    }   
+                    if(jugadoreSeleccionado == 'jugador3'){
+                        partida.jugadores[0] = j1
+                    }   
+                    if(jugadoreSeleccionado == 'jugador4'){
+                        partida.jugadores[0] = j1
+                    }   
+                } else{
+            
+                    if(jugadoreSeleccionado == 'jugador1'){
+                        partida.jugadores[1] = j1
+                    }   
+                    if(jugadoreSeleccionado == 'jugador2'){
+                        partida.jugadores[1] = j2
+                    }   
+                    if(jugadoreSeleccionado == 'jugador3'){
+                        partida.jugadores[1] = j3
+                    }   
+                    if(jugadoreSeleccionado == 'jugador4'){
+                        partida.jugadores[1] = j4
+                    }   
+            
+                }
+                
+            }
+        }
+
+
+    </script>
+</body>
+</html>
