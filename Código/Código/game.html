@@ -13,60 +13,79 @@
 
        
     
-        <div>
+      
             <button id= "player00" onclick="playerSelecter('player00')";>
                     
               Jugador 1
             </button>
-        </div>
-        <div>
+       
+        
 
             <button id="player01" onclick="playerSelecter('player01')";>
                 Jugador 2
             </button>    
                 
-        </div>        
-        <div>
+       
            <button id="player02" onclick="playerSelecter('player02')";>
                  Jugador 3
             </button> 
-        </div>
-        <div>
+       
 
             <button id="player03" onclick="playerSelecter('player03')";>
                 Jugador 4
             </button> 
 
-        </div>
+       
 
         
-    </diV>
+    </div>
+    <section class="liveBar">
+     
+        <div id="slider" type="range" min="0" max="100"></div>
+        <div id="sliderP2" type="range" min="0" max="100"></div>
+    </section>
+
 
     <div>
 
+        <div class="live">
+            
+            <div id=p1Live>
+                
+                Player 1
+
+            </div>
+           
+             <div id=p2Live>
+                
+                Player 2
+
+            </div>
+
+        </div>
         <div id="game" >
             <div id="player1">
-                Jugador 1
+                
+                Player 1
                 <button id="bonAtackP1">atacar</button>
             </div>
 
             <div id="player2">
-                Jugador 2
+                Player 2
                 <button id="bonAtackP2">atacar</button>
             </div>
 
         </div>
-
-
-
-        <script src="js/main.js">
-   
-        
-        </script>
-
+       
 
     </div>
 
+
+
+    <script src="js/main.js"></script>
+
+ 
+   
 
 </body>
 </html>

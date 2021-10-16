@@ -1,19 +1,17 @@
 /* Pantall de seleccion*/
 
 #seleccion{
-    display: flex;
-    padding-left: 20rem;
-    padding-right: 10rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-rows: minmax(1em auto);
+    grid-gap: 2em;
 }
 
 
 #player00{
 
 
-    margin-right: 4em;
+    grid-row: 1;
     padding-bottom: 1em;
     padding-top: 1em;
 }
@@ -21,7 +19,7 @@
 #player01{
 
 
-    margin-right: 4em;
+    grid-row: 1;
     padding-bottom: 1em;
     padding-top: 1em;
 }
@@ -29,15 +27,13 @@
 #player02{
 
 
-    margin-right: 4em;
+    grid-row: 1;
     padding-bottom: 1em;
     padding-top: 1em;
 }
 
 #player03{
-
-
-    margin-right: 1em;
+    grid-row: 1;
     padding-bottom: 1em;
     padding-top: 1em;
 }
@@ -56,24 +52,59 @@ body{
 /* Pantalla del juego*/
 
 #game{
-    display: flex;
-    padding-left: 25rem;
-    padding-right: 10rem;
-    padding-top:35rem;
-    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: minmax(1em auto);
+    grid-gap: 2em;
 }
 
 #bonAtackP1{
 
     
-    margin-right: 1em;
+    grid-row: 1; 
     padding-bottom: 1em;
     padding-top: 1em;
 }
 
 #bonAtackP2{
 
-    margin-right: 1em;
+    grid-row: 1; 
     padding-bottom: 1em;
     padding-top: 1em;
+}
+
+.live{ 
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: minmax(1em auto);
+    grid-gap: 2em;
+}
+
+#p1Live{
+    margin-left:2em;
+    grid-row: 1; 
+}
+
+#p2Live{
+    
+    grid-row: 1; 
+}
+
+.liveBar{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: minmax(1em auto);
+    grid-gap: 2em;
+}
+#slider{
+    background-color:crimson;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    grid-row: 1; 
+}
+#sliderP2{
+    background-color:crimson;
+    padding-left: 2em;
+    padding-bottom: 1em;
+   grid-row: 1;
 }

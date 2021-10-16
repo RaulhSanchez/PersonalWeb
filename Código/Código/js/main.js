@@ -1,5 +1,5 @@
 let mainScreen =document.getElementById("seleccion").style.visibility="visible";
-let gameScreen = document.getElementById("game").style.visibility="hidden";
+let gameScreen = document.getElementById("game").style.visibility="visible";
 
 class player {
   constructor(name,damage, life, playerImage){
@@ -72,8 +72,7 @@ function playerSelecter(playerSelected){
         }   
       }
     }
-
-    
+ 
    }
 
 
