@@ -1,5 +1,5 @@
 let mainScreen =document.getElementById("seleccion").style.visibility="visible";
-let gameScreen = document.getElementById("game").style.visibility="visible";
+let gameScreen = document.getElementById("game").style.visibility="hidden";
 
 class player {
   constructor(name,damage, life, playerImage){
@@ -32,7 +32,7 @@ function playerSelecter(playerSelected){
   if(game.player.length == 2){
     console.log(playerSelected);
     let mainScreen =document.getElementById("seleccion").style.visibility;
-    mainScreen =document.getElementById("seleccion").style.visibility="hiden";
+    mainScreen =document.getElementById("seleccion").style.visibility="hidden";
     
 
     let gameScreen = document.getElementById("game");
