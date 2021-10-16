@@ -7,41 +7,51 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <div id="seleccion">
+    <diV>
+        <div id="seleccion">
 
 
-        <div class="jugador1" onclick="playerSelected('jugador1')";>
-            Jugador 1
-        </div>
-        <div class="jugador2" onclick="playerSelected('jugador2')";>
-            Jugador 2
-        </div>       
-        <div class="jugador3" onclick="playerSelected('jugador3')";>
-            Jugador 3
-        </div>
-        <div class="jugador4" onclick="playerSelected('jugador4')";>
-            Jugador 4
+            <div>
+                <button id= "jugador1" onclick="playerSelecter(player00)";>
+                    
+                    Jugador 1
+                </button>
+            </div>
+            <div class="jugador2" onclick="playerSelecter('jugador2')";>
+                Jugador 2
+            </div>       
+            <div class="jugador3" onclick="playerSelecter('jugador3')";>
+                Jugador 3
+            </div>
+            <div class="jugador4" onclick="playerSelecter('jugador4')";>
+                Jugador 4
+            </div>
+
         </div>
 
+
+    </diV>
+
+    <div>
+
+        <div id="pelea" style="display: none;">
+            <div>
+                Jugador 1
+                <button>atacar</button>
+            </div>
+
+            <div>
+                Jugador 2
+                <button>atacar</button>
+            </div>
+
+        </div>
+
+
+
+        <script src="js/main.js"></script>
     </div>
 
-    <div id="pelea" style="display: none;">
-        <div>
-            Jugador 1
-            <button>atacar</button>
-        </div>
-
-        <div>
-            Jugador 2
-            <button>atacar</button>
-        </div>
-
-    </div>
-
-
-
-    <script src="js/main.js"></script>
 
 </body>
 </html>
