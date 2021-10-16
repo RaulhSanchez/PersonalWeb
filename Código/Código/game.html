@@ -4,52 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="game.css" type="text/css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <diV>
-        <div id="seleccion">
+    
+    <div id="seleccion">
 
-
-            <div>
-                <button id= "jugador1" onclick="playerSelecter(player00)";>
+       
+    
+        <div>
+            <button id= "player00" onclick="playerSelecter('player00')";>
                     
-                    Jugador 1
-                </button>
-            </div>
-            <div class="jugador2" onclick="playerSelecter('jugador2')";>
+              Jugador 1
+            </button>
+        </div>
+        <div>
+
+            <button id="player01" onclick="playerSelecter('player01')";>
                 Jugador 2
-            </div>       
-            <div class="jugador3" onclick="playerSelecter('jugador3')";>
-                Jugador 3
-            </div>
-            <div class="jugador4" onclick="playerSelecter('jugador4')";>
+            </button>    
+                
+        </div>        
+        <div>
+           <button id="player02" onclick="playerSelecter('player02')";>
+                 Jugador 3
+            </button> 
+        </div>
+        <div>
+
+            <button id="player03" onclick="playerSelecter('player03')";>
                 Jugador 4
-            </div>
+            </button> 
 
         </div>
 
-
+        
     </diV>
 
     <div>
 
-        <div id="pelea" style="display: none;">
-            <div>
+        <div id="game" >
+            <div >
                 Jugador 1
-                <button>atacar</button>
+                <button id="bonAtackP1">atacar</button>
             </div>
 
             <div>
                 Jugador 2
-                <button>atacar</button>
+                <button id="bonAtackP2">atacar</button>
             </div>
 
         </div>
 
 
 
-        <script src="js/main.js"></script>
+        <script src="js/main.js">
+   
+        
+        </script>
+
+
     </div>
 
 
