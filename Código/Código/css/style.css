@@ -36,9 +36,7 @@ and (max-width : 700) {
 /* Smartphones (portrait and landscape) ----------- */  
 @media all and (min-width : 300px) and (max-width: 4000px)
  {  
-/* Styles */  
-
-
+ 
 
 /* HEADER*/
 .enlaceJuego{
@@ -104,15 +102,17 @@ body{
 
 
 
-
 /* WEB DESIGN*/
 
 .webDesignDiv{
     display: flex;
+    position: -webkit-sticky;
     position: sticky;
-    top:1em;
+    top: 0px;
+    left: 0px;
     font-size: 4em;
     color: white;
+    margin-bottom:  2rem;
 }
 .web{
     text-align:auto;
@@ -131,6 +131,35 @@ body{
     margin-top:2em;
     margin-left: 1.5em;
 }
+
+/*    Game Design      */
+
+.container{
+    
+  
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top:30rem;
+    font-size: 4em;
+    margin-bottom:  2rem;
+
+}
+
+
+.box{
+    position: sticky;
+    z-index: 1;
+    padding-bottom: 3em;
+    padding-right: 20em;
+    margin-right:30em;
+    background-color:rgba(243, 241, 241, 0.23);
+}
+
+
+/*  Footer */
+
+
 .rrss{
     grid-column: 1fr 1fr;
     grid-row: 1fr 1fr;
