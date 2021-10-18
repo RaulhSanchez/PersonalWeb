@@ -32,7 +32,6 @@ En la parte del Header se encuntra el boton de acceso al juego(que posteriorment
       
 </header>
 
-
 ...
 
 La parte principal del Body es una imagen de fondo de un estilo minimalista y una gama de colores oscuros con las letras de Web Design que acompañan hasta cierto punto de la página al hacer scroll hasta llegar a la parte de Game Design, quee también será sticky al añadir más comlementos a la página.
@@ -40,18 +39,10 @@ La parte principal del Body es una imagen de fondo de un estilo minimalista y un
 
 ...
 
-
 div class="webDesignDiv">
     <p class="web">WEB </p><br>
     <p class="design">DESIGN</p>
 </div>
-
-
-
-<div class="mainImagen">
-    <img class="imagenMain"src="/Imagenes/IMG_0786.jpeg">
-</div>
-
 
 ...
 
@@ -72,16 +63,17 @@ El footer tiene el enlace directo a las redes sociales personales de contacto m�
     </div>
 
 </footer>
-
-
 ...
+
+
 
 ###CSS
 
 La parte que destaca de CSS es la que se centra el las letras sticky de Web Design que acompañan al usuario a lo largo de la partde superior de la página. Esto se ha conseguido de la siguiente manera.
 
-´´´
 
+
+´´´
 .webDesignDiv{
    
     display: flex;
