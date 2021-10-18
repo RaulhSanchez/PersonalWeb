@@ -39,6 +39,8 @@ La parte principal del Body es una imagen de fondo de un estilo minimalista y un
 
 
 ...
+
+
 div class="webDesignDiv">
     <p class="web">WEB </p><br>
     <p class="design">DESIGN</p>
