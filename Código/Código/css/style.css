@@ -181,4 +181,51 @@ body{
 }
 
 
+/*
+.footer{
+    position:sticky;
+    display: grid;
+    padding-top: 27em;
+    grid-template-columns: 2fr,3fr,2fr;
+    grid-template-rows: 1fr,1fr,1fr;
+}
+.redes{
+    grid-column-start: 1;
+    grid-row-end: 3;
+    font-size: 2em;
+
+}
+
+.redes{
+    text-align: left;
+    font-size: 2em;
+    color: aliceblue;
+    grid-column: 1;
+  
+}
+.github{
+    font-family: Courier New, monospace;
+    text-align: bottom;
+    font-size: 1.5em;
+    color: aliceblue;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.instagram{
+    font-family: Courier New, monospace;
+    text-align: bottom;
+    font-size: 1.5em;
+    color: aliceblue;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.linkedin{
+    font-family: Courier New, monospace;
+    text-align: bottom;
+    font-size: 1.5em;
+    color: aliceblue;
+    margin-top: 2em;
+    margin-left:2em;
+}*/
+
 }
