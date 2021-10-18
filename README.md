@@ -74,7 +74,7 @@ La parte que destaca de CSS es la que se centra el las letras sticky de Web Desi
 
 
 ´´´
-.webDesignDiv{
+
    
     display: flex;
     position: sticky;
@@ -84,7 +84,9 @@ La parte que destaca de CSS es la que se centra el las letras sticky de Web Desi
     color: white;
     margin-bottom:  2rem;
 }
-.web{
+
+
+
     text-align:auto;
     font-size: 2em;
     color: rgb(8, 8, 8);
@@ -92,7 +94,7 @@ La parte que destaca de CSS es la que se centra el las letras sticky de Web Desi
     font-family:  New, monospace;
     margin-left: 0.5em;
 }
-.design{
+
     text-align:auto;
     font-size: 2em;
     color: white;
