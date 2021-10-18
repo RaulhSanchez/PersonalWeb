@@ -79,10 +79,40 @@ function playerSelecter(playerSelected){
 }
 
 let player1Button= document.getElementById("player1");
+let player2Button= document.getElementById("player2");
+let livep1=document.getElementById("p1Live");
+let livep2=document.getElementById("p2Live");
 
-function onClick(life){
-  if (player1Button){
-    game.player[1].life =  - 5;
-    console.log(life)
-  }
+function onClick(damage){
+  console.log(damage);
+ switch(damage){
+
+  case 'player1':
+
+   
+    game.player[1].life =game.player[1].life -5;
+    livep2.innerHTML = game.player[1].life;
+    if(game.player[1].life <=0){
+      alert("You win player 1")
+  
+      //lamar a funcion (nueva) de pantalla de winner
+     
+    }
+    console.log(livep1)
+  break;
+
+  case 'player2':
+  
+      game.player[0].life =game.player[0].life -5;
+      livep1.innerHTML = game.player[0].life;
+      if(game.player[0].life <=0){
+        alert("You win player 2")
+      }
+      console.log(livep2)
+    break;
+ }
+  
 }
+
+let winner= document.getElementById("winner");
+

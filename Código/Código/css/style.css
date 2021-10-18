@@ -1,40 +1,7 @@
 
-/* Smartphones (portrait and landscape) ----------- */  
-@media only screen  
-and (min-width : 300px)  
-and (max-width : 700) {  
-/* Styles */  
-.botonesTop{
-    display:flex;
-}
-.sobreMi{
-    justify-content: right;
-    
-}
-.contacto{
-    position: relative;
-    left: 20em;
-}
-
-.mainImagen{
-    display: flex;
-}
-.imagenMain{
-    flex:auto;
-    /* Tamaño*/
-
-    /*Posicion*/
-    padding-top: 2em;
-
-    
-}
-
-
-} 
-
 
 /* Smartphones (portrait and landscape) ----------- */  
-@media all and (min-width : 300px) and (max-width: 4000px)
+@media all and (min-width : 30px) and (max-width: 4000px)
  {  
  
 
@@ -59,20 +26,22 @@ and (max-width : 700) {
     justify-content:right;   
 }
 .sobreMi{
-    z-index:2;
+   text-align: center;
     background-color: black;
     color: aliceblue;
     border: 0em;
     font-family:  New, monospace;
-    margin-right:2em;
+    margin-left: 5em;
     font-size: 2em;
 }
 .sobreMi:hover{
     background-color: gray;
 }
 
+
 .contacto{
-    
+    text-align: center;
+    flex:auto;
     background-color: black;
     color: aliceblue;
     border: 1em;
@@ -117,8 +86,8 @@ body{
 .webDesignDiv{
    
     display: flex;
-    position: fixed;
-    top: 10em;
+    position: sticky;
+    top: 0em;
     left: 0;
     font-size: 4em;
     color: white;
@@ -147,18 +116,26 @@ body{
 
 .color{
     background-color: rgb(2, 14, 37);
-    padding-bottom: 10em;
+    display:flex;
     position: sticky;
+    top: 10em;
+    left: 0;
+    font-size: 4em;
+    color: white;
+    margin-bottom:  2rem;
 }
+
+
+
+
 
 /*  Footer */
 
 
 .footer{
-    background-color: rgb(2, 14, 37);
-    padding-top: 27em;
-    position: sticky;
+    position:static;
     display: grid;
+    padding-top: 27em;
     grid-template-columns: 2fr,3fr,2fr;
     grid-template-rows: 1fr,1fr,1fr;
 }
@@ -174,8 +151,7 @@ body{
     font-size: 2em;
     color: aliceblue;
     grid-column: 1;
-    margin: 0%; 
-    margin-left: 2em;  
+  
 }
 .github{
     font-family: Courier New, monospace;
