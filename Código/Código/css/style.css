@@ -115,17 +115,19 @@ body{
 
 
 .color{
-    background-color: rgb(2, 14, 37);
+    background-color:black;
     display:flex;
-    position: sticky;
+    position:sticky;
     top: 10em;
     left: 0;
     font-size: 4em;
-    color: white;
     margin-bottom:  2rem;
 }
 
-
+.img{
+    width: 20em;
+    padding-bottom: 2em;
+}
 
 
 
@@ -133,7 +135,7 @@ body{
 
 
 .footer{
-    position:static;
+    position:sticky;
     display: grid;
     padding-top: 27em;
     grid-template-columns: 2fr,3fr,2fr;
