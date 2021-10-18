@@ -77,3 +77,12 @@ function playerSelecter(playerSelected){
 
 
 }
+
+let player1Button= document.getElementById("player1");
+
+function onClick(life){
+  if (player1Button){
+    game.player[1].life =  - 5;
+    console.log(life)
+  }
+}
