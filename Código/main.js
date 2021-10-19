@@ -1,3 +1,5 @@
+
+/*
 let valor = localStorage.getItem('LinkedIn');
 alert("Aceptar cookies");
 
@@ -27,4 +29,6 @@ function handleStorage(event) {
     } else {
     // Do somthing else
     }
-    }
+    
+}
+*/

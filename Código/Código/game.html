@@ -10,92 +10,43 @@
 <body>
     
     <div id="seleccion">
-
-       
-    
-      
-            <button id= "player00" onclick="playerSelecter('player00')";>
-                    
-              Jugador 1
+            <button id= "player00" onclick="playerSelecter('player00')";>                    
+                Jugador 1
             </button>
-       
-        
-
             <button id="player01" onclick="playerSelecter('player01')";>
                 Jugador 2
-            </button>    
-                
-       
-           <button id="player02" onclick="playerSelecter('player02')";>
-                 Jugador 3
+            </button>        
+            <button id="player02" onclick="playerSelecter('player02')";>
+                Jugador 3
             </button> 
-       
-
             <button id="player03" onclick="playerSelecter('player03')";>
                 Jugador 4
-            </button> 
-
-       
-
-        
+            </button>    
+            
     </div>
-
     <div id="game" >
-
-
-        <section class="liveBar">
-     
+        <section class="liveBar">     
             <div id="slider" type="range" min="0" max="100"></div>
             <div id="sliderP2" type="range" min="0" max="100"></div>
         </section>
-
-
-    
-
-        <div class="live">
-            
-            <div id=p1Live>
-                
-                 
-
-            </div>
-           
-             <div id=p2Live>
-                
-                
-
-            </div>
-
+        <div class="live">   
+            <div id=p1Live></div>           
+            <div id=p2Live></div>
         </div>
-
-
-
         <div id="buttonPlayers">
-            <div onclick="onClick('player1')"id="player1">
-                
+            <div onclick="onClick('player1')"id="player1">                
                 Player 1
-                <button id="bonAtackP1">atacar</button>
+                <button id="bonAtackP1" >atacar</button>
             </div>
-
             <div id="player2" onclick="onClick('player2')">
                 Player 2
-                <button id="bonAtackP2">atacar</button>
+                <button id="bonAtackP2" >atacar</button>
             </div>
-
         </div>
-       
-
     </div>
-<div id="winner">
-    el ganador es : 
-</div>
-
-
-
+    <div id="winner">
+        el ganador es : 
+    </div>
     <script src="js/main.js"></script>
-
- 
-   
-
 </body>
 </html>

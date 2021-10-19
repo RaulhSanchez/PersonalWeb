@@ -1,10 +1,109 @@
 
+@media (min-width: 310px) and (max-width: 425px){
+
+/*  Body */
+    body{
+    background-coloR:black  
+ }
+
+/* HEAD  */
+.botonesTop{
+    justify-content: left;
+    position:sticky;
+}
+.sobreMi{
+    position: fixed;
+    top:17em;
+    left:0;
+    background-color: black;
+    color: aliceblue;
+    border: 0em;
+    font-family:  New, monospace;
+    font-size: 2em;
+}
+.contacto{
+    position: fixed;
+    top:17em;
+    left:8em;
+    background-color: black;
+    color: aliceblue;
+    border: 1em;
+    font-family:  New, monospace;
+    font-size: 2em;
+}
+.contacto:hover{
+    color: gray;
+}
+/* WEB DESIGN */
+.webDesignDiv{ 
+    display: flex;
+    top: 3em;
+    left: 0;
+    font-size: 4em;
+    color: white;
+    margin-bottom:  2rem;
+}
+.web{
+    text-align:auto;
+    font-size: 2em;
+    color: rgb(253, 253, 253);
+    font-family:  New, monospace;
+    margin-left: 0.5em;
+}
+.design{
+    text-align:auto;
+    font-size: 2em;
+    color: white;
+    font-family:  New, monospace;
+    margin-top:2em;
+    margin-left: 1.5em;
+}
+
+/* FOTO */
+
+.img{
+    width: 60em;
+    padding-bottom: 2em;
+}
+
+/* FOOTER */
+
+.footer{
+    position:sticky;
+    display: flex;
+}
+.rrss{
+    display: flex;
+    font-size: 2em;
+}
+
+.github{
+    font-family: Courier New, monospace;
+    text-align: bottom;
+    font-size: 1.5em;
+    color: aliceblue;
+    margin-right: 1em;
+}
+.instagram{
+    font-family: Courier New, monospace;
+    text-align: bottom;
+    font-size: 1.5em;
+    color: aliceblue;
+    margin-right: 1em;
+}
+.linkedin{
+    font-family: Courier New, monospace;
+    text-align: bottom;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+
+}
+
 
 /* Smartphones (portrait and landscape) ----------- */  
-@media all and (min-width : 30px) and (max-width: 4000px)
- {  
+@media all and (min-width : 728px) and (max-width: 4000px){
  
-
 /* HEADER*/
 .enlaceJuego{
     display: flex;
@@ -37,8 +136,6 @@
 .sobreMi:hover{
     background-color: gray;
 }
-
-
 .contacto{
     text-align: center;
     flex:auto;
@@ -52,15 +149,10 @@
     color: gray;
 }
 
-
-
-
 /* BODY*/
 
-body{
-  
+body{  
    background-coloR:black
-    
 }
 .mainImagen{
     display: flex;
@@ -70,21 +162,11 @@ body{
     flex:auto;
     padding-top: 2em;
     position: static;
- 
 }
-
-
-
-
-
-
-
-
 
 /* WEB DESIGN*/
 
-.webDesignDiv{
-   
+.webDesignDiv{ 
     display: flex;
     position: sticky;
     top: 0em;
@@ -110,10 +192,6 @@ body{
     margin-top:2em;
     margin-left: 1.5em;
 }
-
-
-
-
 .color{
     background-color:black;
     display:flex;
@@ -129,12 +207,9 @@ body{
     padding-bottom: 2em;
 }
 
-
-
 /*  Footer */
 
-
-.footer{
+.rrss{
     position:sticky;
     display: grid;
     padding-top: 27em;
@@ -142,20 +217,15 @@ body{
     grid-template-rows: 1fr,1fr,1fr;
 }
 .redes{
-    grid-column-start: 1;
-    grid-row-end: 3;
-    font-size: 2em;
-
-}
-
-.redes{
-    text-align: left;
-    font-size: 2em;
+    font-family: Courier New, monospace;
+    text-align: bottom;
+    font-size: 1.5em;
     color: aliceblue;
-    grid-column: 1;
-  
+    margin-top: 2em;
+    margin-left: 1em;
 }
 .github{
+    grid-column-start:1;
     font-family: Courier New, monospace;
     text-align: bottom;
     font-size: 1.5em;
@@ -170,6 +240,7 @@ body{
     color: aliceblue;
     margin-top: 2em;
     margin-left: 1em;
+    grid-column-start:2;
 }
 .linkedin{
     font-family: Courier New, monospace;
@@ -178,8 +249,7 @@ body{
     color: aliceblue;
     margin-top: 2em;
     margin-left:2em;
+    grid-column-start:3;
 }
-
-
 
 }
