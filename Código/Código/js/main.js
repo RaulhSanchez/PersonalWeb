@@ -2,17 +2,18 @@ let mainScreen =document.getElementById("seleccion").style.visibility="visible";
 let gameScreen = document.getElementById("game").style.visibility="hidden";
 
 class player{
-  constructor(name,damage, life){
+  constructor(name,damage, life, image){
     this.name =name
     this.damage=damage
     this.life=life
+    this.image=image
   }
 };
 
-let player00 = new player('player00',-5, 100)
-let player01 = new player('player01',-5, 100)
-let player02 = new player('player02',-5, 100)
-let player03 = new player('player03',-5, 100)
+let player00 = new player('player00',-5, 100,"/Imagenes/neoclinus-blanchardi.jpg.imgo.jpeg")
+let player01 = new player('player01',-5, 100,"/Imagenes/PM-animales-raros-1.jpeg")
+let player02 = new player('player02',-5, 100,"/Imagenes/tarsero-fantasma-top-de-animales-mas-raros-del-mundo.jpg")
+let player03 = new player('player03',-5, 100,"/Imagenes/Unknown.jpeg")
 
 let game={
   player:[]
@@ -23,7 +24,7 @@ console.log(game.player);
 
 let playerSelecter=(playerSelected)=>{
   if(game.player.length == 2){
-    console.log(playerSelected);
+        console.log(playerSelected);
     let mainScreen =document.getElementById("seleccion").style.visibility;
     mainScreen =document.getElementById("seleccion").style.visibility="hidden";
     let gameScreen = document.getElementById("game");
@@ -79,13 +80,14 @@ let livep2=document.getElementById("p2Live");
         player1Button.style.visibility="hidden"
         player2Button.style.visibility="visible"
       }
-      game.player[1].life =game.player[1].life -5;
-      livep2.innerHTML = game.player[1].life;
-      if(game.player[1].life <=1){
-        alert("You win player 1")
-      }
-      console.log(livep2)
-    break;
+        game.player[1].life =game.player[1].life -5;
+        livep2.innerHTML = game.player[1].life;
+        if(game.player[1].life <=0){
+          alert("You win player 1")
+    
+        }
+        console.log(livep2)
+      break; 
     case 'player2':
       if(game.player[0].life -5){
         player2Button.style.visibility="hidden"
@@ -96,7 +98,7 @@ let livep2=document.getElementById("p2Live");
         if(game.player[0].life <=0){
           alert("You win player 2")
         }
-        console.log(livep2)
+        console.log(livep1)
       break;  
   } 
   
